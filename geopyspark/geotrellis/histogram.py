@@ -100,7 +100,7 @@ class Histogram(object):
             float
         """
 
-        return self.scala_histogram.mean().get()
+        return self.scala_histogram.median().get()
 
     def values(self):
         """Lists each indiviual value within the histogram.
